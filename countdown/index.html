@@ -1,0 +1,23 @@
+<!-- 見えない部分 -->
+<html>
+    <head></head>
+    <!-- ↓ここから見える部分↓ -->
+    <body>
+
+        <!-- ↓この下にプログラムを入力してね！↓ -->
+        <script>
+let i = 10;
+function timer() {
+	if (i >= 0){
+	document.getElementById("count").innerHTML = i;
+	i--;	
+	setTimeout("timer()",1000);}
+}
+</script>
+        <!-- ↓この下にボタンをつくろう！↓ -->
+        <button onclick="timer();">スタート！</button>
+        <p id="count"></p>
+        <!-- ここまで！ -->
+
+    </body>
+</html>
